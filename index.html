@@ -2,6 +2,7 @@
 
 <html>
     <head>
+        <script src="https://kit.fontawesome.com/782d0532c7.js" crossorigin="anonymous"></script>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Test</title>
@@ -10,9 +11,26 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
-      <H1></H1>  
-        
-        
+      <H1>Calculator</H1>  
+      <input type="number" id="num1" placeholder="Enter first number">  
+      <input type="number" id="num2" placeholder="Enter second number">
+      <br>  
+      <button onclick="document.getElementById('ans').innerHTML = parseInt(document.getElementById('num1').value) + parseInt(document.getElementById('num2').value)">
+        <i class="fa-solid fa-plus"></i>
+      </button>
+      <button onclick="document.getElementById('ans').innerHTML = parseInt(document.getElementById('num1').value) - parseInt(document.getElementById('num2').value)">
+        <i class="fa-solid fa-minus"></i>
+      </button>
+      <button onclick="document.getElementById('ans').innerHTML = parseInt(document.getElementById('num1').value) * parseInt(document.getElementById('num2').value)">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <button onclick="document.getElementById('ans').innerHTML = parseInt(document.getElementById('num1').value) / parseInt(document.getElementById('num2').value)">
+        <i class="fa-solid fa-divide"></i>
+      </button>
+      <button onclick="const out = document.getElementById('ans'); out.textContent = out.textContent + out.textContent">
+        <i class="fa-solid fa-copy"></i>
+      </button>
+      <b id="ans"></b>
         <script src="" async defer></script>
     </body>
 </html>
