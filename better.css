@@ -25,3 +25,8 @@ button:active {
   background-color: #0056b3;
   transform: scale(0.98); /* Slight shrink effect */
 }
+.dspop {
+  font-size: 40px;
+  color: black;
+  text-align: center;
+}
