@@ -1,0 +1,27 @@
+.box {
+  width: 200px;           /* Sets the content width */
+  padding: 10px;          /* Adds space inside the border */
+  border: 20px solid black; /* Creates the visible box outline */
+  margin: 10px;           /* Adds space outside the box */
+  background-color: #000000; /* Optional background fill */
+}
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: dodgerblue;
+  padding: 10px;
+  border-radius: 15px;
+  gap: 8px;
+}
+.container button {
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 150px;
+}
+button:active {
+  background-color: #0056b3;
+  transform: scale(0.98); /* Slight shrink effect */
+}

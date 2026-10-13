@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+</style>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="better.css">
+        <script src="https://kit.fontawesome.com/782d0532c7.js" crossorigin="anonymous"></script>
+        <script>var op = '';</script>
+    </head>
+    <body>
+    <div class="container">
+        <h1>Calculator</h1>
+    </div>
+    <br>
+    <div class="container">
+        <input type="text" value="" readonly id = "num2">  
+    </div>
+    <br>
+    <div class="container">
+        <input type="text" value="" readonly id = "num1">  
+    </div>
+    <br>
+    
+    <div class="container">
+      <button onclick="document.getElementById('num1').value += '1'">1</button>
+        <button onclick="document.getElementById('num1').value += '2'">2</button>
+        <button onclick="document.getElementById('num1').value += '3'">3</button>
+        <button onclick="document.getElementById('num1').value += '4'">4</button>
+        <button onclick="document.getElementById('num1').value += '5'">5</button>
+        <button onclick="document.getElementById('num1').value += '6'">6</button>
+        <button onclick="document.getElementById('num1').value += '7'">7</button>
+        <button onclick="document.getElementById('num1').value += '8'">8</button>
+        <button onclick="document.getElementById('num1').value += '9'">9</button>
+        <button onclick="document.getElementById('num1').value = ''; document.getElementById('num2').value = '';">AC</button>
+        <button onclick="document.getElementById('num1').value += '0'">0</button>
+        <button onclick="document.getElementById('num1').value += '.'">.</button>
+        <button onclick="var op = '+';  const first = document.getElementById('num1').value; if (first !== '') { document.getElementById('num2').value = Number(first); document.getElementById('num1').value = ''; }">+</button>
+        <button onclick="const firstNumber = Number(document.getElementById('num2').value); const secondNumber = Number(document.getElementById('num1').value); if (document.getElementById('num1').value !== '') { document.getElementById('num2').value = firstNumber + secondNumber; } document.getElementById('num1').value = '';"> =</button>
+        </div>
+
+
+
+    <script src="" async defer></script>
+    </body>
+</html>
