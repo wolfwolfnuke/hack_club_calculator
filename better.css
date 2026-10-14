@@ -51,7 +51,8 @@ body {
 
 
 
-@media (prefers-color-scheme: light) {
+
+@media (prefers-color-scheme: dark) {
   body {
     background-color: #171036;
     color:#171036

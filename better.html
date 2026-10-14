@@ -48,6 +48,16 @@
         if (second == '') { document.getElementById('num2').value = Number(first); document.getElementById('num1').value = ''; }">*</button>
         <button onclick="op = '/'; document.getElementById('dspop').textContent = op; const first = document.getElementById('num1').value; const second = document.getElementById('num2').value;
         if (second == '') { document.getElementById('num2').value = Number(first); document.getElementById('num1').value = ''; }">/</button>
+        <button onclick="const first = document.getElementById('num1').value; const second = document.getElementById('num2').value;
+        if (second !== '' && first == '') {
+            const sqrted = Math.sqrt(Number(second));
+            document.getElementById('num2').value = sqrted;
+            document.getElementById('num1').value = '';
+        } else {
+            const sqrted = Math.sqrt(Number(first)); 
+            document.getElementById('num2').value = sqrted;
+            document.getElementById('num1').value = '';
+        } ">√</button>
 
 
         <button onclick="
