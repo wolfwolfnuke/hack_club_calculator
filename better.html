@@ -6,6 +6,7 @@
 </style>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,7 +22,7 @@
 
     <div class="container">
         <input type="text" value="" readonly id = "num2"> 
-        <p id = dspop></p> 
+        <p id = "dspop" class="symbol"></p> 
         <input type="text" value="" readonly id = "num1">  
     </div>
     <br>
@@ -39,14 +40,14 @@
         <button onclick="document.getElementById('num1').value = ''; document.getElementById('num2').value = '';">AC</button>
         <button onclick="document.getElementById('num1').value += '0'">0</button>
         <button onclick="document.getElementById('num1').value += '.'">.</button>
-        <button onclick="op = '+'; document.getElementById('dspop').textContent = op; const first = document.getElementById('num1').value;
-         if (first !== '') { document.getElementById('num2').value = Number(first); document.getElementById('num1').value = ''; }">+</button>
-        <button onclick="op = '-'; document.getElementById('dspop').textContent = op; const first = document.getElementById('num1').value;
-        if (first !== '') { document.getElementById('num2').value = Number(first); document.getElementById('num1').value = ''; }">-</button>
-        <button onclick="op = '*'; document.getElementById('dspop').textContent = op; const first = document.getElementById('num1').value;
-        if (first !== '') { document.getElementById('num2').value = Number(first); document.getElementById('num1').value = ''; }">*</button>
-        <button onclick="op = '/'; document.getElementById('dspop').textContent = op; const first = document.getElementById('num1').value;
-        if (first !== '') { document.getElementById('num2').value = Number(first); document.getElementById('num1').value = ''; }">/</button>
+        <button onclick="op = '+'; document.getElementById('dspop').textContent = op; const first = document.getElementById('num1').value; const second = document.getElementById('num2').value;
+         if (second == '') { document.getElementById('num2').value = Number(first); document.getElementById('num1').value = ''; }">+</button>
+        <button onclick="op = '-'; document.getElementById('dspop').textContent = op; const first = document.getElementById('num1').value; const second = document.getElementById('num2').value;
+        if (second == '') { document.getElementById('num2').value = Number(first); document.getElementById('num1').value = ''; }">-</button>
+        <button onclick="op = '*'; document.getElementById('dspop').textContent = op; const first = document.getElementById('num1').value; const second = document.getElementById('num2').value;
+        if (second == '') { document.getElementById('num2').value = Number(first); document.getElementById('num1').value = ''; }">*</button>
+        <button onclick="op = '/'; document.getElementById('dspop').textContent = op; const first = document.getElementById('num1').value; const second = document.getElementById('num2').value;
+        if (second == '') { document.getElementById('num2').value = Number(first); document.getElementById('num1').value = ''; }">/</button>
 
 
         <button onclick="

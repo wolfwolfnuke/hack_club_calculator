@@ -1,32 +1,60 @@
 .box {
-  width: 200px;           /* Sets the content width */
-  padding: 10px;          /* Adds space inside the border */
-  border: 20px solid black; /* Creates the visible box outline */
-  margin: 10px;           /* Adds space outside the box */
-  background-color: #000000; /* Optional background fill */
+  width: 12.5rem;           
+  padding: 0.625rem;         
+  border: 0.25rem solid black;
+  margin: 0.625rem;           
+  background-color: #000000;
 }
 .container {
   display: grid;
   grid-template-columns: auto auto auto;
-  background-color: dodgerblue;
-  padding: 10px;
+  background-color: #a1c1e8;
+  padding: 0.625rem;
   border-radius: 15px;
   gap: 8px;
 }
 .container button {
   background-color: #f1f1f1;
   border: 1px solid black;
-  padding: 10px;
-  font-size: 30px;
+  padding: 0.625rem;
+  font-size: 1.875rem;
   text-align: center;
-  border-radius: 150px;
+  border-radius: 9.375rem;
+  font-size: 1.875rem;
 }
 button:active {
   background-color: #0056b3;
-  transform: scale(0.98); /* Slight shrink effect */
+  transform: scale(0.90);
 }
-.dspop {
-  font-size: 40px;
+#dspop {
+  font-size: 1rem;
   color: black;
   text-align: center;
+  
+}
+.container input {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  font-size: 1.25rem;
+}
+
+.display {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+}
+body {
+  background-color: #e5c7a1;
+
+}
+
+
+
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #171036;
+    color:#171036
+  }
+
 }
